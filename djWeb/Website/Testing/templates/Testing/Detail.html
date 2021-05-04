@@ -1,0 +1,13 @@
+{% if course.id is 1 %}
+<h1><a href="https://www.python.org/"> {{course.coursename}} </a> </h1>
+<h2>{{course.instructorname}} </h2>
+
+{% elif course.id is 2%}
+<h1><a href ="https://netmath.illinois.edu/college/math-415"> {{course.coursename}}</a> </h1>
+<h2>{{course.instructorname}} </h2>
+
+{% else %}
+<h1><a href="https://cs233.github.io/"> {{course.coursename}} </a> </h1>
+<h2>{{course.instructorname}} </h2>
+
+{% endif %}

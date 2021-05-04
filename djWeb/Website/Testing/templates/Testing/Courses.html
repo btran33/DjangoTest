@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<h1> Welcome to UIUC! </h1>>
+<img src="https://faculty.math.illinois.edu/~phierony/hieronymi_philipp190308-10-b.jpg" >
+
+<ol>
+    {% for x in course %}
+    <li> <a href=" {{x.id}}/">{{x.coursename}} </a> </li>
+    {% endfor %}
+</ol>
